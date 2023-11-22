@@ -16,26 +16,20 @@
   }
 }
 
-nav .menu {
+.hideNavMenu {
   display: none;
+}
+.showNavMenu {
+  display: block;
   position: absolute;
-  top: 1rem;
-  right:0.5rem;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 2.25rem;
-  height: 2rem;
-}
-
-nav .menu span {
-  height: 0.3rem;
   width: 100%;
-  background-color: black;
-  border-radius: 0.2rem;
-}
-
-@media (max-width: 767.9px) {
-  nav .menu {
-    display: flex;
-  }
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }

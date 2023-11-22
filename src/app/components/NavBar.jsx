@@ -1,33 +1,31 @@
-import Image from 'next'
-
 export default function NavBar () {
   return (
-    <nav className="bg-slate-400 w-full p-5 bg-white shadow md:flex md:items-center md:justify-between">
+    <nav className="bg-slate-300 p-5 md:flex md:items-center md:justify-between shadow z-1">
 
-      <div>
-        <span className="text-2xl font-[Poppins] cursor-pointer">
-        </span>
-      </div>
+        <div className="menu cursor-pointer text-3xl">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-      <ul className="md:flex md:items-center">
-        <li className="mx-4">
-          <a href="#" className="text-xl hover:text-orange-50 duration-100">Hooks</a>
-        </li>
-        <li className="mx-4">
-        <a href="#" className="text-xl hover:text-orange-50 duration-100">Signals</a>
-        </li>
-        <li className="mx-4">
-        <a href="#" className="text-xl hover:text-orange-50 duration-100">React Router</a>
-        </li>
-        <li className="mx-4">
-        <a href="#" className="text-xl hover:text-orange-50 duration-100">Typescript</a>
-        </li>
-        <li className="mx-4">
-        <a href="#" className="text-xl hover:text-orange-50 duration-100">Next.js</a>
-        </li>
-        
-      </ul>
+        <ul className="md:flex md:items-center z-0">
+          <li className="mx-4 my-6 md:my-0">
+            <a href="#" className="text-xl hover:text-orange-50 duration-300">Hooks</a>
+          </li>
+          <li className="mx-4 my-6 md:my-0">
+            <a href="#" className="text-xl hover:text-orange-50 duration-300">Signals</a>
+          </li>
+          <li className="mx-4 my-6 md:my-0">
+            <a href="#" className="text-xl hover:text-orange-50 duration-300">React Router</a>
+          </li>
+          <li className="mx-4 my-6 md:my-0">
+            <a href="#" className="text-xl hover:text-orange-50 duration-300">Typescript</a>
+          </li>
+          <li className="mx-4 my-6 md:my-0">
+            <a href="#" className="text-xl hover:text-orange-50 duration-300">Next.js</a>
+          </li>
+        </ul>
 
-    </nav>
+      </nav>
   )
 }

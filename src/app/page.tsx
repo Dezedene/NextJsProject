@@ -1,12 +1,13 @@
 "use client";
 
-import NavBar from './components/NavBar';
+import App from './components/App';
 
-export default function Home() {
+export default function Page() {
   return (
-    // <Menu />
-    <main className="w-full">
-      <NavBar />
-    </main>
+    <>
+      <main className="w-full">
+        <App />
+      </main>
+    </>
   )
 }

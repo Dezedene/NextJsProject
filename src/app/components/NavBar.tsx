@@ -1,7 +1,9 @@
 "use client";
+
 import Image from 'next/image';
-import reactLogo from "../svg/reactLogo.svg";
-import { useState } from "react"; // import state
+import reactLogo from "./../public/reactLogo.svg";
+import nextLogo from "./../public/nextLogo.svg";
+import { useState } from "react";
 
 
 export default function NavBar () {
@@ -18,7 +20,14 @@ export default function NavBar () {
               height={100}
               alt="Logo"
             />
-            React
+            /
+            <Image
+              className="h-10 inline"
+              src={nextLogo}
+              width={100}
+              height={100}
+              alt="Logo"
+            />
           </span>
         </div>
 
@@ -51,39 +60,39 @@ export default function NavBar () {
             </div>
             <ul className="mobileMenuOpen flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-gray-400 my-8 uppercase">
-                <a href="/Hooks">Hooks</a>
+                <a href="/hooks">Hooks</a>
               </li>
               <li className="border-gray-400 my-8 uppercase">
-                <a href="/Signals">Signals</a>
+                <a href="/signals">Signals</a>
               </li>
               <li className="border-gray-400 my-8 uppercase">
-                <a href="//React Router">React Router</a>
+                <a href="/reactrouter">Router</a>
               </li>
               <li className="border-gray-400 my-8 uppercase">
-              <a href="/Typescript">Typescript</a>
+              <a href="/typescript">Typescript</a>
               </li>
               <li className="border-gray-400 my-8 uppercase">
-              <a href="/Next.js">Next.js</a>
+              <a href="/nextjs">Next.js</a>
               </li>
             </ul>
           </div>
         </section>
 
-        <ul className="desktopMenu hidden space-x-8 lg:flex">
+        <ul className="desktopMenu hidden space-x-8 lg:flex ">
           <li className="border-gray-400 my-8 uppercase">
-            <a href="/Hooks">Hooks</a>
+            <a href="/hooks">Hooks</a>
           </li>
           <li className="border-gray-400 my-8 uppercase">
-            <a href="/Signals">Signals</a>
+            <a href="/signals">Signals</a>
           </li>
           <li className="border-gray-400 my-8 uppercase">
-            <a href="//React Router">React Router</a>
+            <a href="/reactrouter">React Router</a>
           </li>
           <li className="border-gray-400 my-8 uppercase">
-          <a href="/Typescript">Typescript</a>
+          <a href="/typescript">Typescript</a>
           </li>
           <li className="border-gray-400 my-8 uppercase">
-          <a href="/Next.js">Next.js</a>
+          <a href="/nextjs">Next.js</a>
           </li>
         </ul>
 
